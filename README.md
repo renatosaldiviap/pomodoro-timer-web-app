@@ -1,57 +1,44 @@
-# 🕒 Pomodoro Timer (Python CLI)
+# 🕒 Pomodoro Timer | Python CLI
 
-A simple Pomodoro timer built in Python, designed to run in the console with sound alerts between work and break sessions.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![CLI](https://img.shields.io/badge/CLI-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
-This project focuses on basic time control, loops, and user feedback through sound.
+## 📌 Project Overview
 
----
+A lightweight command-line **Pomodoro Timer** built in **Python**, designed to manage deep-work and rest intervals directly in the console with audio alerts between sessions.
 
-## 🚀 Features
+This project demonstrates clean loop control, real-time countdown formatting, and native system audio feedback using Python's standard library.
 
-- ⏱️ 25-minute work sessions and 5-minute breaks (configurable)  
-- 🔊 Sound alerts using `winsound`  
-- 🔁 Infinite Pomodoro cycles  
-- 🖥️ Clean countdown display in the console  
+## 🛠️ Tech Stack & Workflow Architecture
 
----
+- **Language:** Python 3 (Standard Library — zero external dependencies).
+- **Time Management (`time`):** Real-time second-by-second countdown logic and interval scheduling.
+- **Audio Alerts (`winsound`):** Native Windows frequency-based sound notifications for session transitions.
 
-## 🧠 Purpose
+```text
+[ 25-Min Work Session ] ──► [ Audio Alert (winsound) ] ──► [ 5-Min Break Session ] ──► [ Repeat Cycle ]
+```
 
-This project was created to:
+## ✨ Key Features & Requirements
+- ⏱️ Configurable Intervals: Standard 25-minute work sessions followed by 5-minute breaks.
+- 🔊 Audio Notifications: Built-in acoustic alerts via winsound when switching between focus and rest states.
+- 🖥️ Clean Console Display: Dynamic in-place countdown timer in the terminal.
+- ⚠️ System Requirements: Python 3.x on Windows OS (required for the winsound module).
 
-- Practice Python fundamentals  
-- Work with time-based logic (`time.sleep`)  
-- Implement simple automation in the console  
+## 📁 Repository Structure
+```text
+├── pomodoro.py   # Main CLI timer script
+└── README.md     # Project documentation
+```
 
----
-
-## 🛠️ Tech Stack
-
-- Python  
-- time module  
-- winsound (Windows only)  
-
----
-
-## ⚠️ Requirements
-
-- Windows OS (required for `winsound`)  
-- Python 3  
-
----
-
-## ▶️ How to Run
-
+## 🚀 How to Run
+1. Clone this repository to your local machine:
+```bash
+git clone https://github.com/renatosaldiviap/pomodoro-timer.git
+```
+2. Run the script from your terminal:
 ```bash
 python pomodoro.py
 ```
-- Runs in an infinite loop
-- Stop manually with `Ctrl + C`
-
----
-
-## 🔁 How It Works
-- Starts a 25-minute work session
-- Plays a sound alert
-- Starts a 5-minute break
-- Repeats indefinitely
+3. Press Ctrl + C at any time to stop the timer cycle.
